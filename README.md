@@ -1,4 +1,4 @@
-# Meu Projeto 🚀
+# Meu Projeto 
 
 Este é um projeto de exemplo para demonstrar o uso do README.md no GitHub.
 
