@@ -1,0 +1,139 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+    font-size: 16px;
+    height: 100vh; /* Garantir que o body ocupe toda a altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    margin: 0;
+}
+
+/* Menu de navegação */
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: #222;
+    padding: 15px;
+    width: 100%;
+    position: absolute; /* Menu fixo no topo */
+    top: 0;
+    left: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover,
+.menu .active {
+    color: #ff4444;
+}
+
+/* Banner de Identidade */
+.banner-identidade {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.titulo-animado {
+    font-size: 60px;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(90deg, #fff, #ff4444, #fff);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: brilhoPassando 3s linear infinite;
+}
+
+.slogan-deslizante {
+    font-size: 20px;
+    color: #ccc;
+    margin-top: 10px;
+    animation: deslizar 5s ease-in-out infinite;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff4444; /* Cor mais vibrante para o botão */
+    padding: 10px 20px 10px;
+    border-radius: 30px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px; /* Afasta o botao do resto */   
+}
+
+button:hover {
+    background-color: #be6e6e; /* Cor ao passar o mouse */
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: #333;
+    border: 1px solid #555;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #ff4444; /* Cor do contorno no foco */
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.form-container {
+    background-color: #222;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Título do formulário */
+h2.text-3xl {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff4444;
+}
+
+/* Estilo adicional para botões de navegação e formularios */
+.block.font-medium {
+    font-size: large;
+}

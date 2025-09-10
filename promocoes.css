@@ -1,0 +1,248 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+}
+
+/* Menu de navegação */
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: #222;
+    padding: 15px;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover,
+.menu .active {
+    color: #ff4444;
+}
+
+/* Barra de pesquisa */
+.barra-pesquisa {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.barra-pesquisa input {
+    width: 50%;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+}
+
+.barra-pesquisa input:focus {
+    outline: none;
+    box-shadow: 0 0 20px #ff4444;
+}
+
+/* Banner de Identidade */
+.banner-identidade {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.titulo-animado {
+    font-size: 60px;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(90deg, #fff, #ff4444, #fff);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: brilhoPassando 3s linear infinite;
+}
+
+.slogan-deslizante {
+    font-size: 20px;
+    color: #ccc;
+    margin-top: 10px;
+    animation: deslizar 10s linear infinite;
+}
+
+/* Seção Promoções */
+#banner-promocao {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4444;
+    background-color: #333;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.produtos-destaque {
+    padding: 40px 20px;
+    background-color: #1c1c1c;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+.quadrado {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.produto {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.produto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 68, 68, 0.5);
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.produto h3 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #fff;
+}
+
+.produto .preco {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.produto .preco-antigo {
+    color: #bbb;
+    text-decoration: line-through;
+}
+
+.produto .preco-novo {
+    color: #ff4444;
+    font-weight: bold;
+}
+
+.produto .btn-comprar {
+    background-color: #ff4444;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.produto .btn-comprar:hover {
+    background-color: #e60000;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes brilhoPassando {
+    0% { background-position: 200% center; }
+    100% { background-position: -200% center; }
+}
+
+@keyframes deslizar {
+    0% { transform: translateX(-100%); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateX(100%); opacity: 0; }
+}
+
+/* Carrinho Modal */
+.carrinho-modal {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 350px;
+    height: 100%;
+    background-color: #222;
+    transition: right 0.3s ease;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.carrinho-conteudo {
+    padding: 20px;
+    color: white;
+}
+
+#fecharCarrinhoModal {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#fecharCarrinhoModal:hover {
+    color: #ff0101;
+}
+
+#produtosCarrinho {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.total {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #000000;
+    background-color: #b99d9d; /* Azul suave */
+    padding: 5px 9px;
+    border-radius: 80px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    border: 2px solid #ffffff; /* Borda mais escura para destaque */
+   
+}
+

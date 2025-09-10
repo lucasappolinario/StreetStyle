@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Finalizar Compra</title>
+  <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+  <!-- Menu de navegação -->
+  <ul class="menu">
+    <li><a href="home.html">Início</a></li>
+    <li><a href="#" class="active">Checkout</a></li>
+  </ul>
+
+  <!-- Conteúdo principal -->
+  <div class="form-container">
+    <h2 class="text-3xl font-bold mb-6 text-center titulo-animado">Finalizar Compra</h2>
+    <form class="space-y-4">
+      <div>
+        <label class="block font-medium">Nome Completo</label>
+        <input type="text" class="w-full" placeholder="Digite seu nome completo" required>
+      </div>
+      <div>
+        <label class="block font-medium">E-mail</label>
+        <input type="email" class="w-full" placeholder="Digite seu e-mail" required>
+      </div>
+      <div>
+        <label class="block font-medium">Telefone</label>
+        <input type="tel" class="w-full" placeholder="(00) 00000-0000" required>
+      </div>
+      <div>
+        <label class="block font-medium">Endereço</label>
+        <input type="text" class="w-full" placeholder="Rua, número, bairro" required>
+      </div>
+      <div>
+        <label class="block font-medium">CEP</label>
+        <input type="text" class="w-full" placeholder="00000-000" required>
+      </div>
+      <button type="submit" class="btn-comprar w-full mt-4">Confirmar Pedido</button>
+    </form>
+  </div>
+</body>
+</html>
+

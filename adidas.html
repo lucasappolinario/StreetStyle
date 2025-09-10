@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="shortcut icon" href="logo do site.PNG" type="image/x-icon">
+    <title>StreetStyle - Produtos</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li class="dropdown">
+                    <a href="produtos.html" class="active">PRODUTOS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="nike.html">Nike</a></li>
+                        <li><a href="adidas.html">Adidas</a></li>
+                    </ul>
+                </li>
+                <li><a href="promoçoes.html">PROMOÇÕES</a></li>
+                <li><a href="#" id="carrinho-link"><i class="fas fa-shopping-cart"></i> Carrinho (<span id="quantidade-carrinho">0</span>)</a></li>
+                <li><a href="parcerias.html">PARCERIAS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Aba Lateral do Carrinho -->
+    <div id="carrinhoModal" class="carrinho-modal">
+        <div class="carrinho-conteudo">
+            <button id="fecharCarrinhoModal">X</button>
+            <h3>Seu Carrinho</h3>
+            <ul id="produtosCarrinho">
+                <!-- Produtos do carrinho serão inseridos aqui -->
+            </ul>
+            <div class="total">
+                Total: R$ <span id="totalValor">0,00</span>
+            </div>
+            <button
+  class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition w-full"
+  onclick="window.location.href='checkout.html'"
+>
+  Finalizar Compra
+</button>
+        </div>
+    </div>
+
+    <!-- Botão para abrir o carrinho (Aba) -->
+    <button id="abrirCarrinho">Abrir Carrinho</button>
+    
+    <div class="barra-pesquisa">
+        <input type="text" id="input-pesquisa" placeholder="🔍 Buscar produtos...">
+    </div>
+    
+    <hr>
+
+    <section class="banner-identidade">
+        <h1 class="titulo-animado">StreetStyle</h1>
+        <p class="slogan-deslizante">Roupas de marcas tops e renomeadas no mundo todo</p>
+    </section>
+    
+    <section class="produtos-destaque">
+        <h2 class="titulo-destaque">Nossos Produtos</h2>
+        <p class="descricao-produtos">Confira nossa coleção e escolha o seu estilo favorito!</p>
+    
+        <!-- Adicione esta div abaixo -->
+        <div class="lista-produtos">
+    
+            <!-- Produto 11 -->
+            <div class="produto-card">
+                <img src="adidasmarrom.avif" alt="adidas">
+                <h3>Camiseta Single Jersey Manga Longa Essentials Big Logo</h3>
+                <p class="preco">R$ 179,99</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+    
+            <!-- Produto 12 -->
+            <div class="produto-card">
+                <img src="adidasesquisito.avif" alt="adidas">
+                <h3>Camiseta EQT Graphic</h3>
+                <p class="preco">R$ 349,99</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+    
+            <!-- Produto 13 -->
+            <div class="produto-card">
+                <img src="adidasbranco.avif" alt="adidas">
+                <h3>Camiseta Trefoil Essentials</h3>
+                <p class="preco">R$ 119,99</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+    
+        </div> <!-- Feche a div aqui -->
+    
+    </section>
+    
+
+        <script src="produtos.js"></script>
+    
+</body>
+</html>

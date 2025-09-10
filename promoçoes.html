@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="promocoes.css">
+    <link rel="shortcut icon" href="logo do site.PNG" type="image/x-icon">
+    <title>StreetStyle - Promoções</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li><a href="produtos.html">PRODUTOS</a></li>
+                <li><a href="promoçoes.html" class="active">PROMOÇÕES</a></li>
+                <a href="#" id="carrinho-link"><i class="fas fa-shopping-cart"></i> Carrinho (<span id="quantidade-carrinho">0</span>)</a></li>
+                <li><a href="parcerias.html">PARCERIAS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ <!-- Aba Lateral do Carrinho -->
+ <div id="carrinhoModal" class="carrinho-modal">
+    <div class="carrinho-conteudo">
+        <button id="fecharCarrinhoModal">X</button>
+        <h3>Seu Carrinho</h3>
+        <ul id="produtosCarrinho">
+            <!-- Produtos do carrinho serão inseridos aqui -->
+        </ul>
+        <div class="total">
+            Total: R$ <span id="totalValor">0,00</span>
+        </div>
+        <button
+class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition w-full"
+onclick="window.location.href='checkout.html'"
+>
+Finalizar Compra
+</button>
+    </div>
+</div>
+
+<!-- Botão para abrir o carrinho (Aba) -->
+<button id="abrirCarrinho">Abrir Carrinho</button>
+
+    <div class="barra-pesquisa">
+        <input type="text" id="input-pesquisa" placeholder="Buscar produtos...">
+    </div>
+
+    <hr>
+
+    <section class="banner-identidade">
+        <h1 class="titulo-animado">StreetStyle</h1>
+        <p class="slogan-deslizante">Roupas de marcas tops e renomeadas no mundo todo</p>
+    </section>
+
+    <div id="banner-promocao">
+        🎉 SUPER PROMOÇÕES ATIVADAS! Só até hoje! 🔥
+    </div>
+
+    <section class="produtos-destaque">
+        <div class="container">
+            <div class="quadrado">
+                <div class="produto">
+                    <img src="promocoesnike.avif" alt="Nike">
+                    <h3>PROMOÇÃO! <br> Polo Nike Masculina</h3>
+                    <div class="preco">
+                        <span class="preco-antigo">De: <del>R$ 119,99</del></span><br>
+                        <span class="preco-novo">Por: <strong>R$ 94,99</strong></span>
+                    </div>
+                        <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <div class="produto">
+                    <img src="promocaolacoste.avif" alt="lacoste">
+                    <h3>PROMOÇÃO! <br> Lacoste Esportiva UV Protect Stretch</h3>
+                    <div class="preco">
+                        <span class="preco-antigo">De: <del>R$ 299,99</del></span><br>
+                        <span class="preco-novo">Por: <strong>R$ 199,99</strong></span>
+                    </div>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                
+                <div class="produto">
+                    <img src="promocaoadidas.webp" alt="Adidas">
+                    <h3>PROMOÇÃO! <br> Camiseta Masculina adidas Manga Curta Treino Básica</h3>
+                    <div class="preco">
+                        <span class="preco-antigo">De: <del>R$ 99,99</del></span><br>
+                        <span class="preco-novo">Por: <strong>R$ 94,99</strong></span>
+                    </div>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <div class="produto">
+                    <img src="promocaotesla.webp" alt="Tesla">
+                    <h3>PROMOÇÃO! <br> Camiseta tesla branca oversize</h3>
+                    <div class="preco">
+                        <span class="preco-antigo">De: <del>R$ 129,99</del></span><br>
+                        <span class="preco-novo">Por: <strong>R$ 79,99</strong></span>
+                    </div>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

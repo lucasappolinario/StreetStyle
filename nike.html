@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="shortcut icon" href="logo do site.PNG" type="image/x-icon">
+    <title>StreetStyle - Produtos</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li class="dropdown">
+                    <a href="produtos.html" class="active">PRODUTOS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="nike.html">Nike</a></li>
+                        <li><a href="adidas.html">Adidas</a></li>
+                    </ul>
+                </li>
+                <li><a href="promoçoes.html">PROMOÇÕES</a></li>
+                <li><a href="#" id="carrinho-link"><i class="fas fa-shopping-cart"></i> Carrinho (<span id="quantidade-carrinho">0</span>)</a></li>
+                <li><a href="parcerias.html">PARCERIAS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Aba Lateral do Carrinho -->
+    <div id="carrinhoModal" class="carrinho-modal">
+        <div class="carrinho-conteudo">
+            <button id="fecharCarrinhoModal">X</button>
+            <h3>Seu Carrinho</h3>
+            <ul id="produtosCarrinho">
+                <!-- Produtos do carrinho serão inseridos aqui -->
+            </ul>
+            <div class="total">
+                Total: R$ <span id="totalValor">0,00</span>
+            </div>
+            <button
+  class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition w-full"
+  onclick="window.location.href='checkout.html'"
+>
+  Finalizar Compra
+</button>
+        </div>
+    </div>
+
+    <!-- Botão para abrir o carrinho (Aba) -->
+    <button id="abrirCarrinho">Abrir Carrinho</button>
+    
+    <div class="barra-pesquisa">
+        <input type="text" id="input-pesquisa" placeholder="🔍 Buscar produtos...">
+    </div>
+    
+    <hr>
+
+    <section class="banner-identidade">
+        <h1 class="titulo-animado">StreetStyle</h1>
+        <p class="slogan-deslizante">Roupas de marcas tops e renomeadas no mundo todo</p>
+    </section>
+    
+    <section class="produtos-destaque">
+        <h2 class="titulo-destaque">Nossos Produtos</h2>
+        <p class="descricao-produtos">Confira nossa coleção e escolha o seu estilo favorito!</p>
+    
+        <div class="lista-produtos">
+            <!-- Produto 1 -->
+            <div class="produto-card">
+                <img src="polo nike.avif" alt="Nike">
+                <h3>Camisa Polo Nike Masculina</h3>
+                <p class="preco">R$ 759,99</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="produto-card">
+                <img src="polonike branca.avif" alt="Nike">
+                <h3>Camisa Polo Nike Sportswear Masculina</h3>
+                <p class="preco">R$ 313,49</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="produto-card">
+                <img src="polonike verde.avif" alt="Nike">
+                <h3>Camisa Polo Nike Slim Fit Masculina</h3>
+                <p class="preco">R$ 474,99</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <!-- Produto 4 -->
+            <div class="produto-card">
+                <img src="polonike dryfit.avif" alt="Nike">
+                <h3>Camisa Polo Nike Dri-FIT Park Masculina</h3>
+                <p class="preco">R$ 237,49</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <!-- Produto 5 -->
+            <div class="produto-card">
+                <img src="polonike dryfit branca.avif" alt="Nike">
+                <h3>Camisa Polo Nike Court Dri-FIT Masculina</h3>
+                <p class="preco">R$ 170,99</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <!-- Produto 6 -->
+            <div class="produto-card">
+                <img src="yoricorinthians.jpg" alt="Corinthians">
+                <h3>Camiseta Bold Approve X Corinthians Fe Alvinegra Preta</h3>
+                <p class="preco">R$ 199,99</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <!-- Produto 7 -->
+            <div class="produto-card">
+                <img src="corinthianslistrado.webp" alt="Corinthians">
+                <h3>Camisa Corinthians III 24/25 s/n° Torcedor Nike Masculina - Branco+Preto</h3>
+                <p class="preco">R$ 284,99</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <!-- Produto 8 -->
+            <div class="produto-card">
+                <img src="corinthianspreta.avif" alt="Corinthians">
+                <h3>Camisa Nike Corinthians II 2024/25 Torcedor Pro Masculina</h3>
+                <p class="preco">R$ 332,49</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <!-- Produto 9 -->
+            <div class="produto-card">
+                <img src="corinthiansdegrade.webp" alt="Corinthians">
+                <h3>Camisa Corinthians I 24/25 s/n° Torcedor Nike Masculina - Branco+Preto</h3>
+                <p class="preco">R$ 284,99</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <!-- Produto 10 -->
+            <div class="produto-card">
+                <img src="camisetacorinthians.webp" alt="Corinthians">
+                <h3>Camisa Corinthians Torcedor Faixa Branca Masculina</h3>
+                <p class="preco">R$ 151,90</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="produtos.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+}
+
+/* Menu de navegação */
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: #222;
+    padding: 15px;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover,
+.menu .active {
+    color: #ff4444;
+}
+
+/* Barra de pesquisa */
+.barra-pesquisa {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Banner de Identidade */
+.banner-identidade {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.titulo-animado {
+    font-size: 60px;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(90deg, #fff, #ff4444, #fff);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: brilhoPassando 3s linear infinite;
+}
+
+.slogan-deslizante {
+    font-size: 20px;
+    color: #ccc;
+    margin-top: 10px;
+    animation: deslizar 10s linear infinite;
+}
+
+/* Seção Sobre */
+.sobre {
+    padding: 40px 20px;
+    background-color: #1c1c1c;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes brilhoPassando {
+    0% { background-position: 200% center; }
+    100% { background-position: -200% center; }
+}
+
+@keyframes deslizar {
+    0% { transform: translateX(-100%); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateX(100%); opacity: 0; }
+}
